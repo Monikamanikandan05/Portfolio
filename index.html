@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monika M | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page active">
+        <div class="hero-container">
+            <div class="hero-text">
+                <p class="greeting">Hi there, I'm</p>
+                <h1 class="name">Monika M</h1>
+                <h2 class="role">Full Stack Developer</h2>
+                <p class="tagline">Learning & Building Projects with Passion. I specialize in both front-end and
+                    back-end development, constantly exploring new technologies to create seamless digital experiences.
+                </p>
+                <button id="btn-about-me" class="primary-btn">About Me</button>
+            </div>
+            <div class="hero-image">
+                <img src="photo.jpeg.jpeg" alt="Monika M - Profile" class="profile-pic">
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE (Contains all details) -->
+    <div id="about-page" class="page">
+        <nav class="navbar">
+            <div class="nav-brand">Monika M</div>
+            <div class="nav-menu">
+                <button class="nav-btn active" data-target="about-section">About</button>
+                <button class="nav-btn" data-target="skills-section">Skills</button>
+                <button class="nav-btn" data-target="experience-section">Experience</button>
+                <button class="nav-btn" data-target="projects-section">Projects</button>
+                <button class="nav-btn" data-target="contact-section">Contact</button>
+            </div>
+            <button id="btn-back-home" class="secondary-btn">Back to Home</button>
+        </nav>
+
+        <div class="main-content">
+            <!-- ABOUT SECTION -->
+            <section id="about-section" class="content-section active">
+                <h2 class="section-title">About Me</h2>
+                <div class="card"
+                    style="text-align: center; display: flex; flex-direction: column; align-items: center;">
+                    <img src="photo.jpeg" alt="Monika M"
+                        style="width: 180px; height: 180px; border-radius: 50%; object-fit: cover; margin-bottom: 25px; border: 4px solid var(--accent-color); box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);">
+                    <p style="max-width: 800px; line-height: 1.8;">I am a third-year Computer Science and Engineering
+                        student at Coimbatore Institute of Engineering and Technology. I am passionate about web
+                        development, with hands-on experience in building responsive and user-friendly websites. I enjoy
+                        developing practical, real-world applications and exploring modern web technologies.</p>
+                    <div
+                        style="margin-top: 30px; display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 40px;">
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; color: var(--text-primary); font-weight: 500; background: rgba(255, 255, 255, 0.05); padding: 10px 20px; border-radius: 30px; border: 1px solid var(--card-border);">
+                            <span style="font-size: 1.2rem;">📍</span>
+                            <span>Coimbatore</span>
+                        </div>
+                        <div
+                            style="display: flex; align-items: center; gap: 10px; color: var(--text-primary); font-weight: 500; background: rgba(255, 255, 255, 0.05); padding: 10px 20px; border-radius: 30px; border: 1px solid var(--card-border);">
+                            <span style="font-size: 1.2rem;">🎓</span>
+                            <span>BE CSE, CIET</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 25px;">
+                        <a href="https://www.linkedin.com/in/monikamanikandan?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            target="_blank" rel="noopener noreferrer"
+                            style="color: var(--text-primary); transition: color 0.3s ease, transform 0.3s ease;"
+                            onmouseover="this.style.color='#0a66c2'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.color='var(--text-primary)'; this.style.transform='scale(1)';">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="https://github.com/Monikamanikandan05" target="_blank" rel="noopener noreferrer"
+                            style="color: var(--text-primary); transition: color 0.3s ease, transform 0.3s ease;"
+                            onmouseover="this.style.color='#ffffff'; this.style.transform='scale(1.1)';"
+                            onmouseout="this.style.color='var(--text-primary)'; this.style.transform='scale(1)';">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills-section" class="content-section">
+                <h2 class="section-title">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-box">
+                        <span class="skill-icon">🌐</span>
+                        <h3>HTML5</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">🎨</span>
+                        <h3>CSS3</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">⚡</span>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">🐍</span>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">🛠️</span>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">🛢️</span>
+                        <h3>MySQL</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">🎨</span>
+                        <h3>Canva</h3>
+                    </div>
+                    <div class="skill-box">
+                        <span class="skill-icon">📊</span>
+                        <h3>Power BI</h3>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE SECTION -->
+            <section id="experience-section" class="content-section">
+                <h2 class="section-title">Internship Experience</h2>
+
+                <div class="card" style="margin-bottom: 25px;">
+                    <h3
+                        style="color: var(--text-primary); margin-bottom: 5px; font-size: 1.4rem; display: flex; align-items: center; gap: 10px;">
+                        Web Development Intern
+                        <a href="https://www.linkedin.com/posts/monikamanikandan_im-excited-to-share-that-ive-recently-completed-activity-7358889218275758080-at4i?utm_source=share&utm_medium=member_android&rcm=ACoAAFK25ocBJUnYMzYNNtDXwq2cOr1n79VkcsA"
+                            target="_blank" rel="noopener noreferrer" title="View Post on LinkedIn"
+                            style="display: flex; align-items: center; color: #0a66c2; text-decoration: none; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </h3>
+                    <p style="color: var(--accent-color); font-weight: 500; margin-bottom: 15px;">Ferrando Global
+                        Solutions Private Limited, Chennai | June 2025 – July 14, 2025</p>
+                    <ul
+                        style="list-style-position: inside; padding-left: 10px; color: var(--text-secondary); line-height: 1.6;">
+                        <li style="margin-bottom: 8px;">Developed responsive and user-friendly web interfaces using
+                            modern front-end technologies such as HTML, CSS, and JavaScript.</li>
+                        <li style="margin-bottom: 8px;">Implemented clean and structured UI components following best
+                            practices in web design and usability.</li>
+                        <li style="margin-bottom: 8px;">Worked on optimizing website performance and ensuring
+                            cross-browser compatibility.</li>
+                        <li style="margin-bottom: 8px;">Gained practical exposure to web development workflows,
+                            debugging techniques, and version control practices.</li>
+                        <li style="margin-bottom: 0;">Collaborated on real-time tasks, enhancing problem-solving and
+                            front-end development skills.</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="margin-bottom: 20px;">
+                    <h3
+                        style="color: var(--text-primary); margin-bottom: 5px; font-size: 1.4rem; display: flex; align-items: center; gap: 10px;">
+                        Data Science & AI Intern
+                        <a href="https://www.linkedin.com/posts/monikamanikandan_internship-learning-technology-activity-7454849768683393026-dInJ?utm_source=share&utm_medium=member_android&rcm=ACoAAFK25ocBJUnYMzYNNtDXwq2cOr1n79VkcsA"
+                            target="_blank" rel="noopener noreferrer" title="View Post on LinkedIn"
+                            style="display: flex; align-items: center; color: #0a66c2; text-decoration: none; transition: transform 0.3s ease;"
+                            onmouseover="this.style.transform='scale(1.1)'"
+                            onmouseout="this.style.transform='scale(1)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    </h3>
+                    <p style="color: var(--accent-color); font-weight: 500; margin-bottom: 15px;">Pydun Technology
+                        Private Limited, Madurai | December 2025 – January 6, 2026</p>
+                    <ul
+                        style="list-style-position: inside; padding-left: 10px; color: var(--text-secondary); line-height: 1.6;">
+                        <li style="margin-bottom: 8px;">Gained hands-on experience in data analysis, preprocessing, and
+                            visualization using data science tools and techniques.</li>
+                        <li style="margin-bottom: 8px;">Worked with datasets to extract meaningful insights and support
+                            data-driven decision-making.</li>
+                        <li style="margin-bottom: 8px;">Applied fundamental concepts of Artificial Intelligence and
+                            Machine Learning in practical scenarios.</li>
+                        <li style="margin-bottom: 8px;">Utilized programming (e.g., Python) for data manipulation and
+                            analysis tasks.</li>
+                        <li style="margin-bottom: 0;">Improved understanding of analytics workflows, model basics, and
+                            real-world data handling.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects-section" class="content-section">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="portfolio_mockup.png" alt="Portfolio Website Mockup" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Website</h3>
+                            <p>Engineered a fully responsive personal portfolio website to present projects, technical
+                                skills, and achievements. Implemented modern UI/UX principles with optimized layouts for
+                                cross-device compatibility. Utilized front-end technologies to ensure smooth navigation,
+                                fast load times, and an engaging user experience. Integrated structured sections
+                                including project showcases and contact interfaces.</p>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="link-btn">View Live</button>
+                                <button class="link-btn outline">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="accident_detection.png" alt="Accident Detection System Interface"
+                                class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Accident Detection and Alert System</h3>
+                            <p>Developed an intelligent accident detection and alert system leveraging sensor-based
+                                inputs to identify collision events in real time. Designed the system to automatically
+                                trigger emergency notifications with location data to predefined contacts. Focused on
+                                improving response time and enhancing road safety through automation and reliable alert
+                                mechanisms.</p>
+                            <div class="tech-stack">
+                                <span>Sensors/IoT</span>
+                                <span>Hardware</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="link-btn">View Live</button>
+                                <button class="link-btn outline">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="todo_app.png" alt="To-Do Application Interface" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>To-Do Application</h3>
+                            <p>Designed and implemented a task management application to streamline daily activity
+                                tracking. Incorporated CRUD (Create, Read, Update, Delete) operations for efficient task
+                                handling. Built with a user-centric interface to enhance usability, enabling users to
+                                organize and prioritize tasks effectively.</p>
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="link-btn">View Live</button>
+                                <button class="link-btn outline">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img-wrapper">
+                            <img src="calculator_app.png" alt="Calculator Application UI" class="project-img">
+                        </div>
+                        <div class="project-content">
+                            <h3>Calculator Application</h3>
+                            <p>Developed a dynamic calculator application supporting core arithmetic operations.
+                                Implemented logical computation handling and input validation to ensure accurate
+                                results. Focused on clean UI design and responsive interaction for seamless user
+                                experience.</p>
+                            <div class="tech-stack">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="link-btn">View Live</button>
+                                <button class="link-btn outline">GitHub</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact-section" class="content-section">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="card contact-card">
+                    <div style="text-align: center; margin-bottom: 25px;">
+                        <p style="color: var(--text-secondary); margin-bottom: 10px;">Feel free to reach out to me
+                            directly at:</p>
+                        <a href="mailto:monikakc2005@gmail.com"
+                            style="color: var(--accent-color); font-size: 1.2rem; font-weight: 500; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: opacity 0.3s ease;"
+                            onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                            ✉️ monikakc2005@gmail.com
+                        </a>
+                    </div>
+                    <div style="border-top: 1px solid var(--card-border); margin-bottom: 25px; margin-top: 5px;"></div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="primary-btn submit-btn">Send Message</button>
+                    </form>
+                    <div id="success-message" class="success-msg hidden">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
